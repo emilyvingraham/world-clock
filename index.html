@@ -7,13 +7,55 @@
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <h1>World Clock</h1>
-    <footer>
-      This project was coded by Emily Ingraham and
-      <a href="https://github.com/emilyvingraham/world-clock" target="_blank"
-        >is open sourced on Github</a
-      >
-    </footer>
+    <div class="container">
+      <p>World Clock</p>
+      <div>
+        <select>
+          <option value="" checked="checked">Select a city</option>
+          <option value="new-york-city">New York City</option>
+          <option value="paris">Paris</option>
+          <option value="tokyo">Tokyo</option>
+          <option value="lisbon">Lisbon</option>
+        </select>
+      </div>
+      <div class="city-containers">
+        <div class="city">
+          <p>New York City</p>
+          <div class="date"><p>Monday January 8, 2024</p></div>
+          <div class="time"><p>12:59 PM</p></div>
+        </div>
+        <div class="city">
+          <p>Paris</p>
+          <div class="date"><p>Monday January 8, 2024</p></div>
+          <div class="time"><p>12:59 PM</p></div>
+        </div>
+      </div>
+      <div class="city-containers">
+        <div class="city">
+          <p>Tokyo</p>
+          <div class="date"><p>Monday January 8, 2024</p></div>
+          <div class="time"><p>12:59 PM</p></div>
+        </div>
+        <div class="city">
+          <p>Lisbon</p>
+          <div class="date"><p>Monday January 8, 2024</p></div>
+          <div class="time"><p>12:59 PM</p></div>
+        </div>
+      </div>
+      <footer>
+        This project was
+        <a href="https://github.com/emilyvingraham" target="_blank"
+          >coded by Emily Ingraham </a
+        >and
+        <a href="https://github.com/emilyvingraham/world-clock" target="_blank"
+          >is open sourced on Github</a
+        >
+        and
+        <a href="https://world-clock-evi.netlify.app/" target="_blank"
+          >hosted on Netlify.</a
+        >
+      </footer>
+    </div>
     <script src="javascript/index.js"></script>
   </body>
 </html>
