@@ -8,3 +8,11 @@
   padding: 10px;
 }
 
+.flag-icon {
+  padding: 0px;
+  margin: 0 auto;
+  height: 40px;
+  position: relative;
+  top: 12px;
+
+}
