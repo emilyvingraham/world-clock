@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Clock - Emiy Ingraham</title>
     <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
-      <h1>World Clock</h1>
+      <div>
+        <div><h1 class="title">World Clock 🌍</h1></div>
+      </div>
       <div>
         <select>
           <option value="" checked="checked">Select a city</option>
@@ -18,42 +26,74 @@
           <option value="lisbon">Lisbon</option>
         </select>
       </div>
-      <div class="city-containers">
-        <div class="city">
-          <h3>
-            London
-            <img class="flag-icon" src="images/uk-flag.png" alt="uk-flag" />
-          </h3>
-          <div class="date"><p>Monday January 8, 2024</p></div>
-          <div class="time"><p>12:59 PM</p></div>
+      <div class="city-container">
+        <div class="flex-headings">
+          <div>
+            <p class="city">
+              London
+              <img
+                src="images/uk-flag.png"
+                alt="united-kingdom-flag"
+                class="flag-icon"
+              />
+            </p>
+          </div>
+          <div><p class="time">11:00 AM</p></div>
         </div>
-        <div class="city">
-          <h3>
-            Paris
-            <img class="flag-icon" src="images/fr-flag.png" alt="fr-flag" />
-          </h3>
-          <div class="date"><p>Monday January 8, 2024</p></div>
-          <div class="time"><p>12:59 PM</p></div>
-        </div>
+        <div><p class="date">Monday January 8 2024</p></div>
       </div>
-      <div class="city-containers">
-        <div class="city">
-          <h3>
-            Tokyo
-            <img class="flag-icon" src="images/jp-flag.png" alt="jp-flag" />
-          </h3>
-          <div class="date"><p>Monday January 8, 2024</p></div>
-          <div class="time"><p>12:59 PM</p></div>
+
+      <div class="city-container">
+        <div class="flex-headings">
+          <div>
+            <p class="city">
+              Paris
+              <img
+                src="images/fr-flag.png"
+                alt="france-flag"
+                class="flag-icon"
+              />
+            </p>
+          </div>
+          <div><p class="time">11:00 AM</p></div>
         </div>
-        <div class="city">
-          <h3>
-            Lisbon
-            <img class="flag-icon" src="images/pt-flag.png" alt="pt-flag" />
-          </h3>
-          <div class="date"><p>Monday January 8, 2024</p></div>
-          <div class="time"><p>12:59 PM</p></div>
-        </div>
+        <div><p class="date">Monday January 8 2024</p></div>
       </div>
+
+      <div class="city-container">
+        <div class="flex-headings">
+          <div>
+            <p class="city">
+              Lisbon
+              <img
+                src="images/pt-flag.png"
+                alt="portugal-flag"
+                class="flag-icon"
+              />
+            </p>
+          </div>
+          <div><p class="time">11:00 AM</p></div>
+        </div>
+        <div><p class="date">Monday January 8 2024</p></div>
+      </div>
+
+      <div class="city-container">
+        <div class="flex-headings">
+          <div>
+            <p class="city">
+              Tokyo
+              <img
+                src="images/jp-flag.png"
+                alt="japan-flag"
+                class="flag-icon"
+              />
+            </p>
+          </div>
+          <div><p class="time">11:00 AM</p></div>
+        </div>
+        <div><p class="date">Monday January 8 2024</p></div>
+      </div>
+
       <footer>
         This project was
         <a href="https://github.com/emilyvingraham" target="_blank"
