@@ -1,111 +1,117 @@
 * {
-  box-sizing: border-box;
-  font-family: 'PT Mono', monospace;
+    box-sizing: border-box;
+    font-family: 'PT Mono', monospace;
 }
 
 body {
-  background-color: #354649;
+    background-color: #354649;
 }
 
+h4 {
+    text-align: center;
+    color: #25316d;
+    font-size: 20px;
+}
+a {
+    color: #25316d;
+}
 .title {
-  text-align: center;
-  font-size: 70px;
-  color: #25316d;
+    text-align: center;
+    font-size: 70px;
+    color: #25316d;
 }
 
 footer {
-  text-align: center;
-  font-size: 18px;
-  padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
 }
 
 .container {
-  border: 1px solid transparent;
-  max-width: 70%;
-  display: block;
-  margin: 10px auto;
-  border-radius: 10px;
-  padding: 10px;
-  background-color: #e0e7e9;
+    border: 1px solid transparent;
+    max-width: 70%;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #e0e7e9;
 }
 
 .flag-icon {
-  padding: 0px;
-  margin: 0 auto;
-  height: 40px;
-  position: relative;
-  top: 8px;
+    padding: 0px;
+    margin: 0 auto;
+    height: 40px;
+    position: relative;
+    top: 8px;
 }
 
 .city {
-  font-size: 35px;
-  font-weight: 900;
-  margin: 0 auto;
+    font-size: 35px;
+    font-weight: 900;
+    margin: 0 auto;
 }
 .date {
-  position: relative;
-  bottom: 10px;
+    position: relative;
+    bottom: 10px;
 }
 
 .time {
-  font-size: 50px;
-  font-weight: 900;
-  margin: 0 auto;
-  position: relative;
-  top: 15px;
-  color: #25316d;
+    font-size: 50px;
+    font-weight: 900;
+    margin: 0 auto;
+    position: relative;
+    top: 15px;
+    color: #25316d;
 }
 
 .time-select {
-  font-size: 50px;
-  font-weight: 900;
-  margin: 0 auto;
-  position: relative;
-  right: -150px;
-  color: #25316d;
-  padding: 0px;
+    font-size: 50px;
+    font-weight: 900;
+    margin: 0 auto;
+    position: relative;
+    right: -150px;
+    color: #25316d;
+    padding: 0px;
 }
 
 .small-select {
-  padding: 10px;
-  font-size: 25px;
-  position: relative;
-  bottom: 10px;
-  right: 30px;
+    padding: 10px;
+    font-size: 25px;
+    position: relative;
+    bottom: 10px;
+    right: 30px;
 }
 
-
 .small {
-  padding: 10px;
-  font-size: 25px;
-  position: relative;
-  bottom: 10px;
-  right: 30px;
-
+    padding: 10px;
+    font-size: 25px;
+    position: relative;
+    bottom: 10px;
+    right: 30px;
 }
 
 .city-container {
-  border: 1px solid transparent;
-  padding: 20px;
-  margin: 20px auto;
-  border-radius: 10px;
-  background-color: #a3c6c4;
+    border: 1px solid transparent;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: #a3c6c4;
 }
 
 .flex-headings {
-  display: flex;
-  justify-content: space-between;
-  vertical-align: text-top;
-  margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: text-top;
+    margin: 10px auto;
 }
 
 select {
-  width: 80%;
-  display: block;
-  margin: 10px auto;
-  border-radius: 10px;
-  height: 50px;
-  font-size: 20px;
-  padding: 10px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
