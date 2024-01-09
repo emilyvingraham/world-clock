@@ -1,123 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>World Clock - Emiy Ingraham</title>
-    <link rel="stylesheet" href="src/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.44/moment-timezone-with-data-1970-2030.min.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <div>
-        <div><h1 class="title">World Clock 🌍</h1></div>
-      </div>
-      <div>
-        <select id="cities-select">
-          <option value="" checked="checked">Select a city</option>
-          <option value="Europe/London">London</option>
-          <option value="Europe/Paris">Paris</option>
-          <option value="Asia/Tokyo">Tokyo</option>
-          <option value="America/New_York">New York</option>
-        </select>
-      </div>
-      <div class="city-container">
-        <div class="flex-headings">
-          <div>
-            <p class="city">
-              London
-              <img
-                src="images/uk-flag.png"
-                alt="united-kingdom-flag"
-                class="flag-icon"
-              />
-            </p>
-          </div>
-          <div>
-            <p class="time" id="time-london"></p>
-          </div>
-        </div>
-        <div><p class="date" id="date-london"></p></div>
-      </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>World Clock - Emiy Ingraham</title>
+        <link rel="stylesheet" href="src/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.44/moment-timezone-with-data-1970-2030.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <div><h1 class="title">World Clock 🌍</h1></div>
+            </div>
 
-      <div class="city-container">
-        <div class="flex-headings">
-          <div>
-            <p class="city">
-              Paris
-              <img
-                src="images/fr-flag.png"
-                alt="portugal-flag"
-                class="flag-icon"
-              />
-            </p>
-          </div>
-          <div>
-            <p class="time" id="time-paris"></p>
-          </div>
-        </div>
-        <div><p class="date" id="date-paris"></p></div>
-      </div>
+            <div>
+                <select id="cities-select">
+                    <option value="" checked="checked">Select a city</option>
+                    <option value="Pacific/Honolulu">Honolulu</option>
+                    <option value="Europe/Berlin">Berlin</option>
+                    <option value="Australia/Sydney">Sydney</option>
+                    <option value="America/Los_Angeles">Los Angeles</option>
+                </select>
+            </div>
 
-      <div class="city-container">
-        <div class="flex-headings">
-          <div>
-            <p class="city">
-              Tokyo
-              <img
-                src="images/jp-flag.png"
-                alt="japan-flag"
-                class="flag-icon"
-              />
-            </p>
-          </div>
-          <div>
-            <p class="time" id="time-tokyo"></p>
-          </div>
-        </div>
-        <div><p class="date" id="date-tokyo"></p></div>
-      </div>
+            <div id="cities">
+                <div class="city-container">
+                    <div class="flex-headings">
+                        <div>
+                            <p class="city">
+                                London
+                                <img
+                                    src="images/uk-flag.png"
+                                    alt="united-kingdom-flag"
+                                    class="flag-icon"
+                                />
+                            </p>
+                        </div>
+                        <div>
+                            <p class="time" id="time-london"></p>
+                        </div>
+                    </div>
+                    <div><p class="date" id="date-london"></p></div>
+                </div>
 
-      <div class="city-container">
-        <div class="flex-headings">
-          <div>
-            <p class="city">
-              New York
-              <img
-                src="images/us-flag.png"
-                alt="united-states-flag"
-                class="flag-icon"
-              />
-            </p>
-          </div>
-          <div>
-            <p class="time" id="time-nyc"></p>
-          </div>
-        </div>
-        <div><p class="date" id="date-nyc"></p></div>
-      </div>
+                <div class="city-container">
+                    <div class="flex-headings">
+                        <div>
+                            <p class="city">
+                                Paris
+                                <img
+                                    src="images/fr-flag.png"
+                                    alt="portugal-flag"
+                                    class="flag-icon"
+                                />
+                            </p>
+                        </div>
+                        <div>
+                            <p class="time" id="time-paris"></p>
+                        </div>
+                    </div>
+                    <div><p class="date" id="date-paris"></p></div>
+                </div>
 
-      <footer>
-        This project was
-        <a href="https://github.com/emilyvingraham" target="_blank"
-          >coded by Emily Ingraham </a
-        >and
-        <a href="https://github.com/emilyvingraham/world-clock" target="_blank"
-          >is open sourced on Github</a
-        >
-        and
-        <a href="https://world-clock-evi.netlify.app/" target="_blank"
-          >hosted on Netlify.</a
-        >
-      </footer>
-    </div>
-    <script src="javascript/index.js"></script>
-  </body>
+                <div class="city-container">
+                    <div class="flex-headings">
+                        <div>
+                            <p class="city">
+                                Tokyo
+                                <img
+                                    src="images/jp-flag.png"
+                                    alt="japan-flag"
+                                    class="flag-icon"
+                                />
+                            </p>
+                        </div>
+                        <div>
+                            <p class="time" id="time-tokyo"></p>
+                        </div>
+                    </div>
+                    <div><p class="date" id="date-tokyo"></p></div>
+                </div>
+
+                <div class="city-container">
+                    <div class="flex-headings">
+                        <div>
+                            <p class="city">
+                                New York
+                                <img
+                                    src="images/us-flag.png"
+                                    alt="united-states-flag"
+                                    class="flag-icon"
+                                />
+                            </p>
+                        </div>
+                        <div>
+                            <p class="time" id="time-nyc"></p>
+                        </div>
+                    </div>
+                    <div><p class="date" id="date-nyc"></p></div>
+                </div>
+            </div>
+
+            <footer>
+                This project was
+                <a href="https://github.com/emilyvingraham" target="_blank"
+                    >coded by Emily Ingraham </a
+                >and
+                <a
+                    href="https://github.com/emilyvingraham/world-clock"
+                    target="_blank"
+                    >is open sourced on Github</a
+                >
+                and
+                <a href="https://world-clock-evi.netlify.app/" target="_blank"
+                    >hosted on Netlify.</a
+                >
+            </footer>
+        </div>
+        <script src="javascript/index.js"></script>
+    </body>
 </html>
