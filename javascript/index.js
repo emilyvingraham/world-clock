@@ -39,3 +39,14 @@ setInterval(function () {
     'hh:mm:ss'
   )} <small>${nycTimeZone.format('A')}</small>`;
 }, 1000);
+
+///////////////////////////
+
+function updateCity(event) {
+  let cityTimeZone = event.target.value;
+  let cityTime = moment().tz(cityTimeZone);
+  console.log(cityTime.format('MMM Do YYYY'));
+}
+
+let citiesSelectElement = document.querySelector('#cities-select');
+citiesSelectElement.addEventListener('change', updateCity);
