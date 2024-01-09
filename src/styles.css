@@ -56,6 +56,13 @@ footer {
   color: #25316d;
 }
 
+
+
+small {
+  padding: 10px;
+  font-size: 30px;
+}
+
 .city-container {
   border: 1px solid transparent;
   padding: 20px;
